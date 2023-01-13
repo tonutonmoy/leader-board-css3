@@ -128,4 +128,46 @@
     border-radius: 15px;
     background-color: #e7b9bf;
     padding: 5px;
-  }   
+  } 
+
+  /* Media Quries*/
+
+  /* Mobile Devices */
+
+  @media only screen and (max-width:688px) {
+    .container{
+      width: 100%;
+      height: 100%;
+     }
+    .players,.blogs, .courses{
+      
+      grid-template-columns: repeat(1, 1fr);
+      grid-row-gap: 20px;
+      padding: 10px;
+      
+    }
+    .player, .blog {
+      flex-direction: column;
+     
+    }
+    .section-title{
+      padding: 10px 0 10px 110px;
+    }
+    .blog-tiltle{
+      padding: 10px 0 10px 30px;
+    }
+  
+  }
+
+  @media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+      width: 100%;
+      height: 100%;
+    }
+    .players, .courses{
+      grid-template-columns: repeat(2,1fr);
+    }
+    .blogs{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
